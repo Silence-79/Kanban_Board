@@ -6,9 +6,9 @@ function App() {
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem("tasks");
     return savedTasks ? JSON.parse(savedTasks) : [
-      { id: 1, title: "Design homepage", status: "todo", important: false },
-      { id: 2, title: "Build login API", status: "inprogress", important: false },
-      { id: 3, title: "Deploy project", status: "done", important: false }
+      { id: 1, status: "todo", important: false },
+      { id: 2, status: "inprogress", important: false },
+      { id: 3, status: "done", important: false }
     ];
   });
 
